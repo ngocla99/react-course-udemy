@@ -67,3 +67,6 @@ const Comments = () => {
 };
 
 export default Comments;
+
+const header = document.getElementsByTagName('header');
+header.classList.remove('static');
