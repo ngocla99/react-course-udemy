@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { Fragment, useState, useEffect, useCallback } from 'react';
 
 import MoviesList from './components/MoviesList';
 import AddMovie from './components/AddMovie';
@@ -75,7 +75,7 @@ function App() {
   }
 
   return (
-    <React.Fragment>
+    <Fragment>
       <section>
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
@@ -83,7 +83,7 @@ function App() {
         <button onClick={fetchMoviesHandler}>Fetch Movies</button>
       </section>
       <section>{content}</section>
-    </React.Fragment>
+    </Fragment>
   );
 }
 
